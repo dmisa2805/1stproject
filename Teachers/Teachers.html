@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcademyHub - Notifications</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Teachers.css" />
+  </head>
+  <body>
+    <!-- SIDEBAR -->
+    <sidebar class="sidebar-container" id="sidebar">
+      <!-- LOGO SECTION -->
+      <div class="logo-container">
+        <div class="logo">
+          <span><a href="/AcademyHub/index.html">A</a></span>
+        </div>
+        <div class="logo-text">
+          <a href="/AcademyHub/index.html">AcademyHub</a>
+        </div>
+      </div>
+      <div class="profile-container">
+        <div class="profile-picture">
+          <img src="Ellipse 8.png" alt="James Bronx Profile" />
+        </div>
+        <!-- PROFILE SECTION -->
+        <div class="profile-items">
+          <h3>James Bronx</h3>
+          <p>Student</p>
+          <button class="profile-items-button">Profile</button>
+        </div>
+      </div>
+      <!-- MENU SECTION -->
+      <menu class="menu-container">
+        <div class="menu-items">
+          <a href="/AcademyHub/Dashboard/Dashboard.html" alt="Dashboard">
+            <i class="fa-solid fa-house"></i>
+          </a>
+          <span
+            ><a href="/AcademyHub/Dashboard/Dashboard.html" alt="Dashboard"
+              >Dashboard</a
+            ></span
+          >
+        </div>
+        <div class="menu-items">
+          <a
+            href="/AcademyHub/Notifications/Notifications.html"
+            alt="Notifications"
+          >
+            <i class="fa-solid fa-bell"></i>
+          </a>
+          <span
+            ><a
+              href="/AcademyHub/Notifications/Notifications.html"
+              alt="Notifications"
+              >Notifications</a
+            ></span
+          >
+        </div>
+        <div class="menu-items">
+          <a href="/AcademyHub/Courses/Courses.html" alt="Courses">
+            <i class="fa-solid fa-calendar"></i>
+          </a>
+          <span
+            ><a href="/AcademyHub/Courses/Courses.html" alt="Courses"
+              >Courses</a
+            ></span
+          >
+        </div>
+        <div class="menu-items">
+          <a href="/AcademyHub/Students/Students.html" alt="Students">
+            <i class="fa-solid fa-user"></i>
+          </a>
+          <span
+            ><a href="/AcademyHub/Students/Students.html" alt="Students"
+              >Student</a
+            ></span
+          >
+        </div>
+        <div class="menu-items">
+          <a href="/AcademyHub/Teachers/Teachers.html" alt="Teachers">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </a>
+          <span
+            ><a href="/AcademyHub/Teachers/Teachers.html" alt="Teachers"
+              >Teacher</a
+            ></span
+          >
+        </div>
+      </menu>
+    </sidebar>
+    <!-- MAIN CONTENT -->
+    <main class="container">
+      <!-- HEADER -->
+      <section class="header">
+        <h1>Teachers</h1>
+        <div class="searchbar-container">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Search here ..." />
+        </div>
+      </section>
+      <!-- ADDITIONAL HEADER -->
+      <div class="button-container">
+        <div class="button-dropdown">
+          <button class="button-arrangement">
+            <span id="select-default">Newest</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </button>
+          <div id="arrangement-dropdown">
+            <span class="dropdown-item">Newest</span>
+            <span class="dropdown-item">Oldest</span>
+            <span class="dropdown-item">Alphabetical</span>
+          </div>
+        </div>
+        <a href="#">
+          <button class="button-add">
+            <i class="fa-solid fa-plus"></i>
+            New Teacher
+          </button>
+        </a>
+      </div>
+      <!-- BODY -->
+      <section id="teachers-list"></section>
+      <!-- FOOTER -->
+      <div class="table-footer">
+        <p>
+          Showing <span id="showing-range">1 - 12</span> from
+          <span>100</span> data
+        </p>
+        <div class="table-footer-pagenumber">
+          <i class="fa-solid fa-caret-left" id="previousPage"></i>
+          <div class="pagenumber" data-page="1">1</div>
+          <div class="pagenumber" data-page="2">2</div>
+          <div class="pagenumber" data-page="3">3</div>
+          <i class="fa-solid fa-caret-right" id="nextPage"></i>
+        </div>
+      </div>
+    </main>
+    <script src="Teachers.js"></script>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AcademyHub - Log In Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <!-- FORM -->
+      <!-- TEACHER FORM -->
+      <section class="form-container teacher-login" id="form">
+        <form name="log-in-form">
+          <h1>Log In</h1>
+          <p>
+            Please check your inbox for login information to access the system
+          </p>
+          <div class="form-input">
+            <div class="form-item">
+              <div class="email-container">
+                <span>Teacher Email Address</span>
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  name="email"
+                  required
+                />
+                <div class="input-missing">
+                  Please fill in your Email Address
+                </div>
+              </div>
+            </div>
+            <div class="form-item">
+              <span>Password</span>
+              <div class="password-container">
+                <i class="fa-solid fa-eye-slash togglePassword"></i>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  name="password"
+                  class="password"
+                  required
+                />
+                <div class="input-missing">Please fill in your Password</div>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="login">Log in</button>
+        </form>
+      </section>
+      <!-- STUDENT FORM -->
+      <section class="form-container student-login" id="form">
+        <form name="log-in-form">
+          <h1>Log In</h1>
+          <p>
+            Please check your inbox for login information to access the system
+          </p>
+          <div class="form-input">
+            <div class="form-item">
+              <div class="email-container">
+                <span>Student Email Address</span>
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  name="email"
+                  required
+                />
+                <div class="input-missing">
+                  Please fill in your Email Address
+                </div>
+              </div>
+            </div>
+            <div class="form-item">
+              <span>Password</span>
+              <div class="password-container">
+                <i class="fa-solid fa-eye-slash togglePassword"></i>
+                <input
+                  type="password"
+                  placeholder="Password"
+                  name="password"
+                  class="password"
+                  required
+                />
+                <div class="input-missing">Please fill in your Password</div>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="login">Log in</button>
+        </form>
+      </section>
+      <!-- TOGGLE -->
+      <!-- TEACHER TOGGLE -->
+      <section class="toggle-container" id="toggle">
+        <div class="toggle">
+          <div class="toggle-page toggle-left">
+            <span>A</span>
+            <h1>Welcome back,</h1>
+            <h1>Teacher!</h1>
+            <p>Are you a student?</p>
+            <button id="studentPage" class="hidden">Log in as Student</button>
+          </div>
+          <!-- STUDENT TOGGLE -->
+          <div class="toggle-page toggle-right">
+            <span>A</span>
+            <h1>Welcome back,</h1>
+            <h1>Student!</h1>
+            <p>Are you a teacher?</p>
+            <button id="teacherPage" class="hidden">Log in as Teacher</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
